@@ -9,7 +9,7 @@
             "hello",
             "help"
           ],
-          "name": "Hello World",
+          "name": "nj-transit-r",
           "description": "Sample Full Description"
         }
       },
@@ -22,7 +22,7 @@
       "custom": {
         "endpoint": {
           "sourceDir": "lambda/custom",
-          "uri": "ask-custom-helloworld-default"
+          "uri": "ask-custom-nj-transit-r-default"
         }
       }
     },

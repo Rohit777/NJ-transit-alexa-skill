@@ -2,33 +2,61 @@
 /* eslint-disable  no-console */
 
 const Alexa = require('ask-sdk-core');
+const axios = require('axios');
 
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speechText = 'Welcome to the Alexa Skills Kit, you can say hello!';
+    const speechText = 'Welcome to the NJ Transit, you can ask me about the next trains at a station. Which stations next train would you like to know about?';
 
     return handlerInput.responseBuilder
       .speak(speechText)
       .reprompt(speechText)
-      .withSimpleCard('Hello World', speechText)
+      .withSimpleCard('NJ Transit', speechText)
       .getResponse();
   },
 };
 
-const HelloWorldIntentHandler = {
+const StationIntentHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-      && handlerInput.requestEnvelope.request.intent.name === 'HelloWorldIntent';
+      && handlerInput.requestEnvelope.request.intent.name === 'StationIntent';
   },
-  handle(handlerInput) {
-    const speechText = 'Hello World!';
+  async handle(handlerInput) {
+    const stationName = handlerInput.requestEnvelope.request.intent.slots.station.value;
+    const stationCode = handlerInput.requestEnvelope.request.intent.slots.station.resolutions.resolutionsPerAuthority[0].values[0].value.id;
+    let speechText = '';
+    
+    await axios.get(`http://traindata.njtransit.com:8092/njttraindata.asmx/getTrainScheduleXML19Rec?username=%20Spike&password=UWinXbDmBoOMRO&station=${stationCode}`)
+      .then(function (response){
+        let parseString = require('./node_modules/xml2js').parseString;
+        let xml = response.data;
+        parseString(xml, function(err, result){
+          let scheduledDepDate = result.STATION.ITEMS[0].ITEM[0].SCHED_DEP_DATE[0];
+          let destination = result.STATION.ITEMS[0].ITEM[0].DESTINATION[0];
+          let trainId = result.STATION.ITEMS[0].ITEM[0].TRAIN_ID[0];
+          let scheduledDepDate1 = result.STATION.ITEMS[1].ITEM[0].SCHED_DEP_DATE[0];
+          let destination1 = result.STATION.ITEMS[1].ITEM[0].DESTINATION[0];
+          let trainId1 = result.STATION.ITEMS[1].ITEM[0].TRAIN_ID[0];
+          let scheduledDepDate2 = result.STATION.ITEMS[2].ITEM[0].SCHED_DEP_DATE[0];
+          let destination2 = result.STATION.ITEMS[2].ITEM[0].DESTINATION[0];
+          let trainId2 = result.STATION.ITEMS[2].ITEM[0].TRAIN_ID[0];
+
+              speechText = `the next train from ${stationName} will depart on ${scheduledDepDate}, ${scheduledDepDate1}, ${scheduledDepDate2}  and it will go to ${destination}, ${destination1}, ${destination2} and the train number is ${trainId}, ${trainId1}, ${trainId2} `;
+          if(err) {
+             speechText = 'Asked station doesn\'t exist in the transit line. please try again';
+          }
+        })
+      })
+      .catch(function (error) {
+        console.log(error)
+      });
 
     return handlerInput.responseBuilder
       .speak(speechText)
-      .withSimpleCard('Hello World', speechText)
+      .withSimpleCard('NJ Transit', speechText)
       .getResponse();
   },
 };
@@ -95,7 +123,7 @@ const skillBuilder = Alexa.SkillBuilders.custom();
 exports.handler = skillBuilder
   .addRequestHandlers(
     LaunchRequestHandler,
-    HelloWorldIntentHandler,
+    StationIntentHandler,
     HelpIntentHandler,
     CancelAndStopIntentHandler,
     SessionEndedRequestHandler
