@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "interactionModel": {
     "languageModel": {
       "invocationName": "n. j. transit",
@@ -970,3 +971,970 @@
     }
   }
 }
+=======
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "nj transit",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "StationIntent",
+                    "slots": [
+                        {
+                            "name": "station",
+                            "type": "station"
+                        }
+                    ],
+                    "samples": [
+                        "trains at {station}",
+                        "tell me about the trains at {station}",
+                        "{station}",
+                        "next train at {station}",
+                        "what train is next at {station}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "station",
+                    "values": [
+                        {
+                            "id": "NY",
+                            "name": {
+                                "value": "New York penn "
+                            }
+                        },
+                        {
+                            "id": "WL",
+                            "name": {
+                                "value": "Woodcliff Lake "
+                            }
+                        },
+                        {
+                            "id": "WB",
+                            "name": {
+                                "value": "Woodbridge"
+                            }
+                        },
+                        {
+                            "id": "WR",
+                            "name": {
+                                "value": "Wood-Ridge"
+                            }
+                        },
+                        {
+                            "id": "WH",
+                            "name": {
+                                "value": "White house"
+                            }
+                        },
+                        {
+                            "id": "WW",
+                            "name": {
+                                "value": "Westwood"
+                            }
+                        },
+                        {
+                            "id": "WF",
+                            "name": {
+                                "value": "Westfield"
+                            }
+                        },
+                        {
+                            "id": "WM",
+                            "name": {
+                                "value": "Wesmont"
+                            }
+                        },
+                        {
+                            "id": "23",
+                            "name": {
+                                "value": "Wayne Route 23"
+                            }
+                        },
+                        {
+                            "id": "WT",
+                            "name": {
+                                "value": "Watsessing Avenue"
+                            }
+                        },
+                        {
+                            "id": "WA",
+                            "name": {
+                                "value": "Watchung avenue"
+                            }
+                        },
+                        {
+                            "id": "WS",
+                            "name": {
+                                "value": "Walnut Street"
+                            }
+                        },
+                        {
+                            "id": "Wk",
+                            "name": {
+                                "value": "Waldwick"
+                            }
+                        },
+                        {
+                            "id": "UM",
+                            "name": {
+                                "value": "Upper Montclair "
+                            }
+                        },
+                        {
+                            "id": "UN",
+                            "name": {
+                                "value": "Union"
+                            }
+                        },
+                        {
+                            "id": "TR",
+                            "name": {
+                                "value": "Trenton Transit Center"
+                            }
+                        },
+                        {
+                            "id": "TW",
+                            "name": {
+                                "value": "Towaco"
+                            }
+                        },
+                        {
+                            "id": "TE",
+                            "name": {
+                                "value": "Teterboro"
+                            }
+                        },
+                        {
+                            "id": "ST",
+                            "name": {
+                                "value": "Summit "
+                            }
+                        },
+                        {
+                            "id": "SF",
+                            "name": {
+                                "value": "Suffern"
+                            }
+                        },
+                        {
+                            "id": "SG",
+                            "name": {
+                                "value": "Stirling"
+                            }
+                        },
+                        {
+                            "id": "LA",
+                            "name": {
+                                "value": "Spring Lake"
+                            }
+                        },
+                        {
+                            "id": "SO",
+                            "name": {
+                                "value": "South Orange"
+                            }
+                        },
+                        {
+                            "id": "CH",
+                            "name": {
+                                "value": "South Amboy "
+                            }
+                        },
+                        {
+                            "id": "SM",
+                            "name": {
+                                "value": "Somerville"
+                            }
+                        },
+                        {
+                            "id": "RT",
+                            "name": {
+                                "value": "Short Hills"
+                            }
+                        },
+                        {
+                            "id": "TS",
+                            "name": {
+                                "value": "Secaucus Junction"
+                            }
+                        },
+                        {
+                            "id": "RF",
+                            "name": {
+                                "value": "Rutherford"
+                            }
+                        },
+                        {
+                            "id": "RL",
+                            "name": {
+                                "value": "Roselle Park"
+                            }
+                        },
+                        {
+                            "id": "RG",
+                            "name": {
+                                "value": "River Edge"
+                            }
+                        },
+                        {
+                            "id": "RW",
+                            "name": {
+                                "value": "Ridgewood"
+                            }
+                        },
+                        {
+                            "id": "RB",
+                            "name": {
+                                "value": "Red Bank"
+                            }
+                        },
+                        {
+                            "id": "RA",
+                            "name": {
+                                "value": "Raritan"
+                            }
+                        },
+                        {
+                            "id": "17",
+                            "name": {
+                                "value": "Ramsey Route 17"
+                            }
+                        },
+                        {
+                            "id": "RY",
+                            "name": {
+                                "value": "Ramsey-Main Street "
+                            }
+                        },
+                        {
+                            "id": "RH",
+                            "name": {
+                                "value": "Rahway"
+                            }
+                        },
+                        {
+                            "id": "FZ",
+                            "name": {
+                                "value": "Radburn"
+                            }
+                        },
+                        {
+                            "id": "PJ",
+                            "name": {
+                                "value": "Princeton Junction"
+                            }
+                        },
+                        {
+                            "id": "PR",
+                            "name": {
+                                "value": "Princeton"
+                            }
+                        },
+                        {
+                            "id": "PP",
+                            "name": {
+                                "value": "Point Pleasant Beach"
+                            }
+                        },
+                        {
+                            "id": "PL",
+                            "name": {
+                                "value": "Plauderville"
+                            }
+                        },
+                        {
+                            "id": "PF",
+                            "name": {
+                                "value": "Plainfield"
+                            }
+                        },
+                        {
+                            "id": "PE",
+                            "name": {
+                                "value": "Perth Amboy"
+                            }
+                        },
+                        {
+                            "id": "NP",
+                            "name": {
+                                "value": "Penn Station Newark"
+                            }
+                        },
+                        {
+                            "id": "PN",
+                            "name": {
+                                "value": "Pennsauken Transit Center"
+                            }
+                        },
+                        {
+                            "id": "PC",
+                            "name": {
+                                "value": "Peapack"
+                            }
+                        },
+                        {
+                            "id": "RN",
+                            "name": {
+                                "value": "Paterson"
+                            }
+                        },
+                        {
+                            "id": "PS",
+                            "name": {
+                                "value": "Passaic"
+                            }
+                        },
+                        {
+                            "id": "PV",
+                            "name": {
+                                "value": "Park Ridge"
+                            }
+                        },
+                        {
+                            "id": "OG",
+                            "name": {
+                                "value": "Orange"
+                            }
+                        },
+                        {
+                            "id": "OD",
+                            "name": {
+                                "value": "Oradell"
+                            }
+                        },
+                        {
+                            "id": "NZ",
+                            "name": {
+                                "value": "North Elizabeth"
+                            }
+                        },
+                        {
+                            "id": "OR",
+                            "name": {
+                                "value": "North Branch"
+                            }
+                        },
+                        {
+                            "id": "ND",
+                            "name": {
+                                "value": "Newark Broad Street"
+                            }
+                        },
+                        {
+                            "id": "NV",
+                            "name": {
+                                "value": "New Providence"
+                            }
+                        },
+                        {
+                            "id": "NB",
+                            "name": {
+                                "value": "New Brunswick"
+                            }
+                        },
+                        {
+                            "id": "NH",
+                            "name": {
+                                "value": "New Bridge Landing"
+                            }
+                        },
+                        {
+                            "id": "NE",
+                            "name": {
+                                "value": "Netherwood"
+                            }
+                        },
+                        {
+                            "id": "NT",
+                            "name": {
+                                "value": "Netcong"
+                            }
+                        },
+                        {
+                            "id": "MH",
+                            "name": {
+                                "value": "Murray Hill"
+                            }
+                        },
+                        {
+                            "id": "MV",
+                            "name": {
+                                "value": "Mountain View-Wayne"
+                            }
+                        },
+                        {
+                            "id": "MT",
+                            "name": {
+                                "value": "Mountain Station"
+                            }
+                        },
+                        {
+                            "id": "ML",
+                            "name": {
+                                "value": "Mountain Lakes"
+                            }
+                        },
+                        {
+                            "id": "MS",
+                            "name": {
+                                "value": "Mountain Avenue"
+                            }
+                        },
+                        {
+                            "id": "TB",
+                            "name": {
+                                "value": "Mount Tabor "
+                            }
+                        },
+                        {
+                            "id": "OL",
+                            "name": {
+                                "value": "Mount Olive "
+                            }
+                        },
+                        {
+                            "id": "MRP",
+                            "name": {
+                                "value": "Mount Arlington"
+                            }
+                        },
+                        {
+                            "id": "MR",
+                            "name": {
+                                "value": "Morristown"
+                            }
+                        },
+                        {
+                            "id": "MX",
+                            "name": {
+                                "value": "Morris Plains"
+                            }
+                        },
+                        {
+                            "id": "ZM",
+                            "name": {
+                                "value": "Montvale"
+                            }
+                        },
+                        {
+                            "id": "UV",
+                            "name": {
+                                "value": "Montclair State University"
+                            }
+                        },
+                        {
+                            "id": "HS",
+                            "name": {
+                                "value": "Montclair Heights"
+                            }
+                        },
+                        {
+                            "id": "MK",
+                            "name": {
+                                "value": "Monmouth Park"
+                            }
+                        },
+                        {
+                            "id": "GO",
+                            "name": {
+                                "value": "Millington"
+                            }
+                        },
+                        {
+                            "id": "MB",
+                            "name": {
+                                "value": "Millburn"
+                            }
+                        },
+                        {
+                            "id": "MD",
+                            "name": {
+                                "value": "Middletown"
+                            }
+                        },
+                        {
+                            "id": "MU",
+                            "name": {
+                                "value": "Metuchen"
+                            }
+                        },
+                        {
+                            "id": "MP",
+                            "name": {
+                                "value": "Metropark Station"
+                            }
+                        },
+                        {
+                            "id": "MpR",
+                            "name": {
+                                "value": "Meadowlands Station"
+                            }
+                        },
+                        {
+                            "id": "MW",
+                            "name": {
+                                "value": "Maplewood"
+                            }
+                        },
+                        {
+                            "id": "SQ",
+                            "name": {
+                                "value": "Manasquan"
+                            }
+                        },
+                        {
+                            "id": "MZ",
+                            "name": {
+                                "value": "Mahwah"
+                            }
+                        },
+                        {
+                            "id": "MA",
+                            "name": {
+                                "value": "Madison"
+                            }
+                        },
+                        {
+                            "id": "LY",
+                            "name": {
+                                "value": "Lyons"
+                            }
+                        },
+                        {
+                            "id": "LN",
+                            "name": {
+                                "value": "Lyndhurst"
+                            }
+                        },
+                        {
+                            "id": "LB",
+                            "name": {
+                                "value": "Long Branch"
+                            }
+                        },
+                        {
+                            "id": "LS",
+                            "name": {
+                                "value": "Little Silver"
+                            }
+                        },
+                        {
+                            "id": "FA",
+                            "name": {
+                                "value": "Little Falls"
+                            }
+                        },
+                        {
+                            "id": "LW",
+                            "name": {
+                                "value": "Lindenwold"
+                            }
+                        },
+                        {
+                            "id": "LI",
+                            "name": {
+                                "value": "Linden"
+                            }
+                        },
+                        {
+                            "id": "LP",
+                            "name": {
+                                "value": "Lincoln Park"
+                            }
+                        },
+                        {
+                            "id": "ON",
+                            "name": {
+                                "value": "Lebanon"
+                            }
+                        },
+                        {
+                            "id": "HP",
+                            "name": {
+                                "value": "Lake Hopatcong"
+                            }
+                        },
+                        {
+                            "id": "KG",
+                            "name": {
+                                "value": "Kingsland"
+                            }
+                        },
+                        {
+                            "id": "JA",
+                            "name": {
+                                "value": "Jersey Avenue"
+                            }
+                        },
+                        {
+                            "id": "UF",
+                            "name": {
+                                "value": "Ho-Ho-Kus"
+                            }
+                        },
+                        {
+                            "id": "HB",
+                            "name": {
+                                "value": "Hoboken Terminal"
+                            }
+                        },
+                        {
+                            "id": "HD",
+                            "name": {
+                                "value": "Hillsdale"
+                            }
+                        },
+                        {
+                            "id": "HI",
+                            "name": {
+                                "value": "Highland Avenue"
+                            }
+                        },
+                        {
+                            "id": "HG",
+                            "name": {
+                                "value": "High Bridge"
+                            }
+                        },
+                        {
+                            "id": "HZ",
+                            "name": {
+                                "value": "Hazlet"
+                            }
+                        },
+                        {
+                            "id": "HW",
+                            "name": {
+                                "value": "Hawthorne"
+                            }
+                        },
+                        {
+                            "id": "HN",
+                            "name": {
+                                "value": "Hammonton"
+                            }
+                        },
+                        {
+                            "id": "HL",
+                            "name": {
+                                "value": "Hamilton"
+                            }
+                        },
+                        {
+                            "id": "HQ",
+                            "name": {
+                                "value": "Hackettstown"
+                            }
+                        },
+                        {
+                            "id": "GK",
+                            "name": {
+                                "value": "Glen Rock-Main Line"
+                            }
+                        },
+                        {
+                            "id": "RS",
+                            "name": {
+                                "value": "Glen Rock-Borough Hall"
+                            }
+                        },
+                        {
+                            "id": "GG",
+                            "name": {
+                                "value": "Glen Ridge"
+                            }
+                        },
+                        {
+                            "id": "GL",
+                            "name": {
+                                "value": "Gladstone"
+                            }
+                        },
+                        {
+                            "id": "GI",
+                            "name": {
+                                "value": "Gillette"
+                            }
+                        },
+                        {
+                            "id": "GW",
+                            "name": {
+                                "value": "Garwood"
+                            }
+                        },
+                        {
+                            "id": "GD",
+                            "name": {
+                                "value": "Garfield"
+                            }
+                        },
+                        {
+                            "id": "FH",
+                            "name": {
+                                "value": "Far Hills"
+                            }
+                        },
+                        {
+                            "id": "FW",
+                            "name": {
+                                "value": "Fanwood"
+                            }
+                        },
+                        {
+                            "id": "EX",
+                            "name": {
+                                "value": "Essex Street"
+                            }
+                        },
+                        {
+                            "id": "EN",
+                            "name": {
+                                "value": "Emerson"
+                            }
+                        },
+                        {
+                            "id": "EZ",
+                            "name": {
+                                "value": "Elizabeth"
+                            }
+                        },
+                        {
+                            "id": "EL",
+                            "name": {
+                                "value": "Elberon"
+                            }
+                        },
+                        {
+                            "id": "EH",
+                            "name": {
+                                "value": "Egg Harbor City"
+                            }
+                        },
+                        {
+                            "id": "ED",
+                            "name": {
+                                "value": "Edison"
+                            }
+                        },
+                        {
+                            "id": "EO",
+                            "name": {
+                                "value": "East Orange"
+                            }
+                        },
+                        {
+                            "id": "DN",
+                            "name": {
+                                "value": "Dunellen"
+                            }
+                        },
+                        {
+                            "id": "DO",
+                            "name": {
+                                "value": "Dover"
+                            }
+                        },
+                        {
+                            "id": "DV",
+                            "name": {
+                                "value": "Denville"
+                            }
+                        },
+                        {
+                            "id": "DL",
+                            "name": {
+                                "value": "Delawanna"
+                            }
+                        },
+                        {
+                            "id": "XC",
+                            "name": {
+                                "value": "Cranford"
+                            }
+                        },
+                        {
+                            "id": "CN",
+                            "name": {
+                                "value": "Convent Station"
+                            }
+                        },
+                        {
+                            "id": "IF",
+                            "name": {
+                                "value": "Clifton"
+                            }
+                        },
+                        {
+                            "id": "CY",
+                            "name": {
+                                "value": "Cherry Hill"
+                            }
+                        },
+                        {
+                            "id": "CM",
+                            "name": {
+                                "value": "Chatham"
+                            }
+                        },
+                        {
+                            "id": "BF",
+                            "name": {
+                                "value": "Broadway"
+                            }
+                        },
+                        {
+                            "id": "BW",
+                            "name": {
+                                "value": "Bridgewater"
+                            }
+                        },
+                        {
+                            "id": "BU",
+                            "name": {
+                                "value": "Brick Church"
+                            }
+                        },
+                        {
+                            "id": "BB",
+                            "name": {
+                                "value": "Bradley Beach"
+                            }
+                        },
+                        {
+                            "id": "BK",
+                            "name": {
+                                "value": "Bound Brook"
+                            }
+                        },
+                        {
+                            "id": "BN",
+                            "name": {
+                                "value": "Boonton"
+                            }
+                        },
+                        {
+                            "id": "BM",
+                            "name": {
+                                "value": "Bloomfield"
+                            }
+                        },
+                        {
+                            "id": "BV",
+                            "name": {
+                                "value": "Bernardsville"
+                            }
+                        },
+                        {
+                            "id": "BY",
+                            "name": {
+                                "value": "Berkeley Heights"
+                            }
+                        },
+                        {
+                            "id": "BS",
+                            "name": {
+                                "value": "Belmar"
+                            }
+                        },
+                        {
+                            "id": "MC",
+                            "name": {
+                                "value": "Bay Street"
+                            }
+                        },
+                        {
+                            "id": "BH",
+                            "name": {
+                                "value": "Bay Head"
+                            }
+                        },
+                        {
+                            "id": "BI",
+                            "name": {
+                                "value": "Basking Ridge"
+                            }
+                        },
+                        {
+                            "id": "AV",
+                            "name": {
+                                "value": "Avenel"
+                            }
+                        },
+                        {
+                            "id": "AC",
+                            "name": {
+                                "value": "Altantic City"
+                            }
+                        },
+                        {
+                            "id": "AO",
+                            "name": {
+                                "value": "Atco"
+                            }
+                        },
+                        {
+                            "id": "AP",
+                            "name": {
+                                "value": "Asbury Park"
+                            }
+                        },
+                        {
+                            "id": "AN",
+                            "name": {
+                                "value": "Annandale"
+                            }
+                        },
+                        {
+                            "id": "AS",
+                            "name": {
+                                "value": "Anderson Street"
+                            }
+                        },
+                        {
+                            "id": "AH",
+                            "name": {
+                                "value": "Allenhurst"
+                            }
+                        },
+                        {
+                            "id": "AZ",
+                            "name": {
+                                "value": "Allendale"
+                            }
+                        },
+                        {
+                            "id": "AB",
+                            "name": {
+                                "value": "Absecon"
+                            }
+                        },
+                        {
+                            "id": "AM",
+                            "name": {
+                                "value": "Aberdeen-Matawan"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+>>>>>>> 114d880bcbcfb7647466c0a2a184bd5870754f3c

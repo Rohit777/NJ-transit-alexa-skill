@@ -1,5 +1,6 @@
 {
   "manifest": {
+<<<<<<< HEAD
     "apis": {
       "custom": {
         "endpoint": {
@@ -54,5 +55,34 @@
       "category": "PUBLIC_TRANSPORTATION",
       "distributionCountries": []
     }
+=======
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Sample Short Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "hello",
+            "help"
+          ],
+          "name": "nj-transit-r",
+          "description": "Sample Full Description"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-custom-nj-transit-r-default"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+>>>>>>> 114d880bcbcfb7647466c0a2a184bd5870754f3c
   }
 }
