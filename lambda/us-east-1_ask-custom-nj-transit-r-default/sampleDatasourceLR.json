@@ -1,0 +1,24 @@
+{
+	"mixedDrinkData": {
+		"properties": {
+			"backgroundImg": "https://s3.amazonaws.com/apl-community-code/drinks/barbackground.jpg",
+			"listOfDrinks": [
+    {
+      "name": "New York Penn Station",
+      "value":"New York penn",
+      "id":"NY"
+    },
+    {
+      "name": "Metropark Station",
+      "value":"Metropark Station",
+      "id":"MP"
+    },
+    {
+      "name": "Newark Penn Station",
+      "value":"New York penn",
+      "id":"NY"
+    }
+  ]
+		}
+	}
+}

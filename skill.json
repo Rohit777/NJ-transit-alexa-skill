@@ -1,0 +1,58 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "ask-custom-nj-transit-r-default",
+          "sourceDir": "lambda\\us-east-1_ask-custom-nj-transit-r-default"
+        },
+        "interfaces": [
+          {
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "locales": {
+        "en-US": {}
+      },
+      "allowsPurchases": false,
+      "usesPersonalInfo": false,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "NJ-Transit",
+          "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/db58/4adf73c80ca34460a6db725f67c4ecc7/APP_ICON?versionId=bbk8hh3NBDirz9nvB03gzbnSGk2Xk8HT&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1549642602&Signature=Oc7lCMPjpRh2Qnars9xAcSALpBI%3D",
+          "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/3b70/bde31daf69cf479aa18e586fb792754e/APP_ICON_LARGE?versionId=nZCMerpuDsl.qrVzj6t8W_n9c2OdiFJx&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1549642602&Signature=%2BT%2BIgmrtgS32wO7AxEc4F1uEV1Q%3D",
+          "summary": "My skill is called NJ transit and it gives you the latest train time for the train station in NJ you would like to learn about.",
+          "description": "My skill is called NJ transit and it gives you the latest train time for the train station in NJ you would like to learn about. It displays the time, destination, and train number on the screen if you have a Alexa device with a screen. You also user touch to click on one popular train stations it displays. All you have to say after you open the skill is \"Show me the schedule for Metropark station\" for example.",
+          "examplePhrases": [
+            "Alexa open nj transit",
+            "Alexa start nj transit",
+            "help"
+          ],
+          "keywords": [
+            "nj",
+            "train",
+            "train",
+            "new",
+            "jersey",
+            "train",
+            "schedule",
+            "transit"
+          ]
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "To launch skill say open nj transit.",
+      "category": "PUBLIC_TRANSPORTATION",
+      "distributionCountries": []
+    }
+  }
+}
